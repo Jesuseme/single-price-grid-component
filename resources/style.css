@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Karla:100,400,500,600,700);
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Karla', Helvetica, monospace;
+}
+
+body
+{
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container 
+{
+    background-color: hsl(204, 43%, 93%);
+    width: 100%;
+    height: 100vh;
+    padding-top: 7rem;
+}
+
+.container section 
+{
+    margin: 0 auto;  
+    display: grid;  
+    column-gap: 0;
+    width: 530px;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19) ;
+    border-radius: 7px;
+}
+
+.container section article 
+{
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.container section .top 
+{
+    background-color: #fff;
+    border-radius: 7px 7px 0 0;
+    grid-column: 1 / -1; 
+}
+
+.container section .top h1
+{
+    color: hsl(179, 62%, 43%);
+    padding: 0 0 1rem ; 
+}
+
+.container section .top h4
+{
+    color: hsl(71, 73%, 54%);
+    padding: 0 0 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.container section .top p 
+{
+    color: hsl(218, 22%, 67%);
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+.container section .center 
+{
+    background-color: hsl(179, 62%, 43%); 
+    margin: 0 0 0 0 ;
+    color: #fff;
+    border-radius: 0 0 0 7px;
+}
+
+.container section .center h2 
+{
+    font-size: 0.95rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.container section .center div
+{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.container section .center div sup  
+{
+    color: hsla(203, 44%, 93%, 0.671);
+    font-size: 0.85rem; 
+    font-weight: 100;
+}
+
+.container section .center p 
+{
+    font-size: 0.8rem;
+    padding: 0.5rem 0 2.5rem;
+    color: hsl(204, 43%, 93%);
+}
+
+.container section .center a 
+{
+    background-color: hsl(71, 73%, 54%);
+    padding: 0.7rem 4.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    box-shadow:  0 6px 6px rgba(0,0,0,0.23);
+}
+
+.container section .bottom
+{
+    background-color: hsl(179, 59%, 47%); 
+    margin: 0 0 0 0 ;
+    border-radius: 0 0 7px 0;
+    color: #fff;
+}
+
+.container section .bottom h3 
+{
+    font-size: 0.95rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.container section .bottom p 
+{
+    color: hsla(203, 44%, 93%, 0.671);
+    font-size: 0.75rem; 
+    font-weight: 100;
+    line-height: 18px;
+}
+
+@media (max-width: 991px)
+{
+
+    .container
+    {
+        padding: 3rem 0 ;
+    }
+
+    .container section 
+    {
+        display: flex;
+        flex-direction: column;
+        width: 80%; 
+        text-align: center;
+    }
+
+    .container section .top 
+    {
+        margin: 0 auto;
+    }
+
+    .container section .center 
+    {
+        border-radius: 0 0 0 0; 
+    }
+
+    .container section .bottom 
+    {
+        border-radius: 0 0 7px 7px; 
+    }
+}
+
+@media (max-width: 380px)
+{
+    .container section 
+    {
+        text-align: left;
+    }
+
+    .container section .center a 
+    {
+        padding: 0.7rem 2rem;
+    }
+}
